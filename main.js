@@ -39,5 +39,14 @@ if(isHovering) {
   $progressBar.style.width = `${seconds / 60 * 14}rem`;
 
   console.log(seconds/60);
+
+   var randomColor = Math.floor(Math.random()*1000).toString(16);
+    $clock.style.background = "#"+randomColor;
+
+    setInterval(
+function () {
+  var randomColor = Math.floor(Math.random()*1000).toString(16);
+  $clock.style.background = "#"+randomColor;
+},1000);
 }
 setInterval(setTime, 1000);
