@@ -40,12 +40,12 @@ if(isHovering) {
 
   console.log(seconds/60);
 
-   var randomColor = Math.floor(Math.random()*1000).toString(16);
+   var randomColor = Math.floor(Math.random()*16777215).toString(16);
     $clock.style.background = "#"+randomColor;
 
     setInterval(
 function () {
-  var randomColor = Math.floor(Math.random()*1000).toString(16);
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
   $clock.style.background = "#"+randomColor;
 },1000);
 }
